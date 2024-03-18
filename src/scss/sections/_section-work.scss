@@ -1,0 +1,150 @@
+.work {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: var(--gn-bg );
+  &__wrapper {
+    max-width: 972px;
+    @include tablet {
+      padding: 20px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 52px;
+    @include mobile {
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    color: var(--c-text-white);
+
+    
+    font-family: var(--ff);
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: -0.4px;
+    @include tablet-small {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__line {
+  }
+
+  &__link {
+    color: var(--c-text-white);
+    opacity: 1;
+    text-align: center;
+    padding: 20px;
+
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+
+    border-radius: 100px;
+
+    border: 2px solid var(--colors-white, #6d5db3);
+
+    padding: 13px 24px 11px;
+
+    &:hover {
+      border: 3px solid var(--colors-white, #6d5db3);
+    }
+  }
+
+  &__grid {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+
+    @include tablet-small {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @include mobile {
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+
+  &__flex {
+  }
+
+  &__column {
+  }
+
+  &__img {
+  }
+
+  &__text {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__name {
+    margin-top: 30px;
+    color: var(--c-text-white);
+    text-align: center;
+
+    
+    font-family:var(--ff);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; 
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    @include mobile {
+      text-align: left;
+    }
+  }
+
+  &__job {
+    color: var(--c-text-white);
+    text-align: center;
+
+ 
+    font-family: var(--ff);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; 
+    margin-bottom: 74px;
+
+    @include mobile {
+      text-align: left;
+    }
+  }
+
+  &__picture {
+    @include mobile {
+      width: 300px;
+      height: 220px;
+    }
+  }
+}
+
+.container {
+}
+
+.imm {
+  width: 470px;
+  height: 280px;
+
+  @include mobile {
+    width: 280px;
+    height: 190px;
+  }
+}
